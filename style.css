@@ -29,13 +29,24 @@
     width: 100% ;
 }
 
+.init-hidden {
+    opacity: 0;
+    transition:  opacity 3s ease-in-out;
+    transition-delay: .2s;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out; */
+}
+
+.init-hidden-off {
+    opacity: 1;
+}
+
   #menu {
     position: fixed;
     right: 0;
     width: 100%;
-    height: 4.5rem;
+    height: 3rem;
     z-index: 999;
-    background-color: #000000a2;
+    background-color: #2b2b2b;
     margin-top: .5em;
       
   }
@@ -48,6 +59,8 @@
     flex-direction: column;
     line-height: 30px;
     margin-left: 5rem;
+    font-size: 12px;
+    
 }
 
 .menu-horizontal{
@@ -63,7 +76,7 @@
 
 #orcamento-btn {
     border: 2px solid #663399;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
 }
 
@@ -71,6 +84,7 @@
     background-color: #663399;
     color: white;
 }
+
 
   
   .home {
@@ -99,10 +113,16 @@
   }
 
   a {
-    color: white
+    color: white;
+    text-decoration: none;
 }
-a:hover {
+.logo-menu a:hover {
     color: rebeccapurple;
+    transition: 0.3s all;
+}
+
+.menu-horizontal li:hover {
+    color: rebeccapurple !important;
     transition: 0.3s all;
 }
 
@@ -135,7 +155,7 @@ a:hover {
 
 #sobre {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #323232;
     display: flex;
     flex-wrap: wrap;
@@ -150,6 +170,7 @@ a:hover {
     justify-content: center;
     padding-right: 1em;
     padding-top: 10em;
+    z-index: 10;
     
 }
 
@@ -160,6 +181,16 @@ a:hover {
     margin-top: .5em;
     font-size: 32px;
     font-weight: 100;
+}
+
+.barra-black {
+    width: 10em;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    z-index: 0;
+    margin-top: 220px;
+
 }
 
 .sobre-mim {
@@ -179,11 +210,37 @@ a:hover {
     color: #000;
     font-size: 40px;
 }
-.barra {
+.barra-verde {
     height: 4px;
     width: 180px;
-    background-color: #663399;
+    background-color: #1e8e25;
 }
+
+.barra-amarela {
+    height: 4px;
+    width: 180px;
+    background-color: #ffb700;
+}
+
+.barra-vermelha {
+    height: 4px;
+    width: 180px;
+    background-color: #fa0303;
+}
+
+.barra-azul {
+    height: 4px;
+    width: 180px;
+    background-color: #030bfa;
+}
+
+.barra-rosa {
+    height: 4px;
+    width: 180px;
+    background-color: #ff04e2;
+}
+
+
 
 .sobre-mim div p {
     font-size: 16px;
@@ -210,6 +267,10 @@ a:hover {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 100;
+}
+
+.jogos-comp img:hover {
+    transform: scale(1.1);
 }
 
 .times {
@@ -239,7 +300,10 @@ a:hover {
 }
 
 
-
+.times img:hover {
+    transform: scale(1.1);
+    translate:calc(1s);
+}
 
   
   .container {
@@ -274,6 +338,32 @@ a:hover {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    background-color: #000;
+  }
+
+  .name-portfolio {
+    width: 10em;
+    
+  }
+  .name-portfolio h2{
+    font-size: 60px;
+    text-transform: capitalize;
+    padding-top: 1em;
+    transform: rotate(270deg);
+    color: #ffffff29;
+    
+  }
+
+  .barra-black h2{
+    font-size: 60px;
+    text-transform: capitalize;
+    padding-top: 2.2em;
+    transform: rotate(270deg);
+    color: #ffffff29;
+    margin-top: 4em;
+    width: 100%;
+    height: 30%;
+    
   }
   
   .portfolio-part1 {
@@ -293,7 +383,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8em;
+    
   }
   .ano2017 div img {    
     padding-right: 4em;
@@ -313,7 +403,7 @@ a:hover {
   }
 
   .ano2017 div p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 1em;
     font-weight: 100;
   }
@@ -334,7 +424,7 @@ a:hover {
   .primeiro-ano {
     width: 150px;
     height: 50px;
-    background-color: #1C1C1C;
+    background-color: #030bfa;
     display: flex;
     font-size: 24px;
     font-weight: 900;
@@ -347,11 +437,11 @@ a:hover {
   .barra-ano2018 {
     width: 150px;
     height: 50px;
-    background-color: #1C1C1C;
+    background-color: #ffb700;
     display: flex;
     font-size: 24px;
     font-weight: 900;
-    margin-left: 63%;
+    margin-left: 68.8vw;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -360,11 +450,11 @@ a:hover {
   .barra-ano2020 {
     width: 150px;
     height: 50px;
-    background-color: #1C1C1C;
+    background-color: #ff04e2;
     display: flex;
     font-size: 24px;
     font-weight: 900;
-    margin-left: 16%;
+    margin-left: 41vh;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -373,24 +463,25 @@ a:hover {
   .barra-ano2020-2021 {
     width: 150px;
     height: 50px;
-    background-color: #1C1C1C;
+    background-color: #fa0303;
     display: flex;
     font-size: 24px;
     font-weight: 900;
-    margin-left: 80%;
+    margin-left: 84vw;
     justify-content: center;
     align-items: center;
     align-content: center;
+    
   }
 
   .barra-ano2022 {
     width: 150px;
     height: 50px;
-    background-color: #1C1C1C;
+    background-color: #1e8e25;
     display: flex;
     font-size: 24px;
     font-weight: 900;
-    margin-left: 80%;
+    margin-left: 73%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -416,7 +507,7 @@ a:hover {
     justify-content: flex-end;
     align-items: center;
     margin-right: 1em;
-    padding-bottom: 8em;
+    
   }
 
   .ano2018 div img {    
@@ -437,7 +528,7 @@ a:hover {
   }
 
   .ano2018 div p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 1em;
     font-weight: 100;
   }
@@ -457,12 +548,13 @@ a:hover {
 
   .logo-ti {
     font-size: 15em  !important;
-    color: #ffffff3b;
+    color: #ffffff0e;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: .5em !important;
-    margin-right: .1em  !important;
+    margin-bottom: 1em !important;
+    margin-right: .2em  !important;
+    font-weight: 900 !important;
   }
 
   .ano2020-2021 {
@@ -471,7 +563,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8em;
+    margin-left: 17em;
   }
   
 
@@ -489,7 +581,7 @@ a:hover {
   }
 
   .ano2020-2021 div p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 1em;
     font-weight: 100;
   }
@@ -500,7 +592,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 8em;
+    padding-right: 20em;
   }
   
 
@@ -518,7 +610,7 @@ a:hover {
   }
 
   .ano2020 div p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 1em;
     font-weight: 100;
   }
@@ -546,7 +638,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 8em;
+   
   }
   
 
@@ -564,9 +656,24 @@ a:hover {
   }
 
   .ano2022 div p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 1em;
     font-weight: 100;
+  }
+
+  .logos-programacao img {
+    width: 80px;
+    height: auto;
+    
+    
+    
+  }
+
+  .logos-programacao img:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+    transform: rotate(350deg);
+    
   }
   
   
@@ -588,7 +695,7 @@ a:hover {
 
 
 #skills {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -598,7 +705,7 @@ a:hover {
 #contato {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #323232;
     display: flex;
     justify-content: center;
@@ -610,7 +717,7 @@ a:hover {
     width: 50%;
     padding-left: 10em;
 }
-.contatos div {
+.contatos div a{
     display: flex;
     margin: 2em;
     align-items: center;
@@ -618,12 +725,12 @@ a:hover {
 
 
 .contatos div h3 {
-    font-size: 40px;
+    font-size: 32px;
     padding-bottom: 1em ;
 }
 
 .contatos div p {
-    font-size: 32px;
+    font-size: 24px;
     margin-left: .5em;
 }
 
@@ -637,7 +744,9 @@ a:hover {
     width: 50%;
 }
 
-
+.contatos-img img {
+    transform: scale(0.8);
+}
 
 
 
@@ -668,7 +777,7 @@ a:hover {
   #rodape {
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
     color: #FFFFFF;
     background-color: #323232;
     padding-bottom: 1em;

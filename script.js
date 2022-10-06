@@ -20,5 +20,32 @@ window.addEventListener('resize', () => {
 
 
 
+// barra de progresso 
+// const indicator = document.querySelector('.linha');
+// const maxHeight = document.body.scrollHeight - window.innerHeight;
 
+// window.addEventListener('scroll', () =>{
+//     const percentage = (window.scrollY / maxHeight) * 200;
+
+//     indicator.style.width = `${percentage}%`;
+// });
+
+
+const observer = new IntersectionObserver(entries => {
+    console.log(entries)
+
+    Array.from(entries).forEach(entry =>{
+        if (entry.intersectionRatio  > 0) {
+            entry.target.classList.add('init-hidden-off')
+        }
+    })
+        
+    
+},{
+    threshold: [0, .5, 1]
+})
+
+Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+    observer.observe(element)
+})
 
