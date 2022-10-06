@@ -1,0 +1,687 @@
+*, *::before, *::after {
+    
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    width: 100% ;
+}
+
+  #menu {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 999;
+    background-color: #000000a2;
+    margin-top: .5em;
+      
+  }
+
+  #menu:after {
+    background-color:  rgba(102, 51, 153, 0.61);
+  }
+
+.logo-menu {
+    flex-direction: column;
+    line-height: 30px;
+    margin-left: 5rem;
+}
+
+.menu-horizontal{
+    margin-right: 5rem;    
+}
+
+.menu-horizontal li {
+    display: inline-block;
+    margin: 20px;
+    color: #fff;
+    
+}
+
+#orcamento-btn {
+    border: 2px solid #663399;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#orcamento-btn:hover{
+    background-color: #663399;
+    color: white;
+}
+
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    
+  }
+
+  .home > div > h1 {
+    font-weight: bolder;
+    font-size: 64px;    
+  }
+
+  .home > div > h1> span {
+    color: rebeccapurple;
+  }
+
+  .home > div > h2 {
+    font-weight: lighter;
+    font-size: 32px;
+  }
+
+  a {
+    color: white
+}
+a:hover {
+    color: rebeccapurple;
+    transition: 0.3s all;
+}
+
+.icon-redes-sociais {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 50px;
+    list-style: none;
+    
+}
+
+.icon-redes-sociais li {
+    padding: 10px;
+}
+
+.icon-redes-sociais li:hover {
+    transform: scale(1.1);
+}
+
+.tex-icon-redes-sociais{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    
+}
+
+#sobre {
+    height: 100vh;
+    width: 100vw;
+    background-color: #323232;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+}
+
+.foto-minha {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 1em;
+    padding-top: 10em;
+    
+}
+
+.foto-minha h2 { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    align-content: center;
+    
+}
+
+.sobre-mim > div {
+    margin-bottom: 2em;
+    width: 80%;
+}
+
+.sobre-mim div h2 {
+    color: #000;
+    font-size: 40px;
+}
+.barra {
+    height: 4px;
+    width: 180px;
+    background-color: #663399;
+}
+
+.sobre-mim div p {
+    font-size: 16px;
+}
+
+.txt-sobre {
+    width: 80%;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jogos-comp {
+    display: flex;
+    align-items: center;
+    
+}
+.jogos-comp div {
+    margin:  2em  2em 0 0;
+}
+.jogos-comp div h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.times {
+    display: flex;
+    align-items: center;
+    
+}
+
+.times div {
+    margin:  2em 2em 0 0;
+    text-align: center;
+}
+.times div h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.times div p{
+    margin-top: .5em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.times div p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+
+
+  
+  .container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .space-holder {
+    position: relative;
+    width: 100%;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+  }
+  
+  .cards {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .portfolio-part1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #323232;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ano2017 {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8em;
+  }
+  .ano2017 div img {    
+    padding-right: 4em;
+  }
+
+  .ano2017 div h2 {
+    font-size: 40px;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+
+  .ano2017 div h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+
+  .ano2017 div p {
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: 100;
+  }
+
+
+
+  .linha-tempo {
+    width: 100%;
+    height: 10%;
+  }
+
+  .linha {
+    height: .5em;
+    background-color: #fff;
+    margin-left: 25em;
+  }
+
+  .primeiro-ano {
+    width: 150px;
+    height: 50px;
+    background-color: #1C1C1C;
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 16.66em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .barra-ano2018 {
+    width: 150px;
+    height: 50px;
+    background-color: #1C1C1C;
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 63%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .barra-ano2020 {
+    width: 150px;
+    height: 50px;
+    background-color: #1C1C1C;
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 16%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .barra-ano2020-2021 {
+    width: 150px;
+    height: 50px;
+    background-color: #1C1C1C;
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .barra-ano2022 {
+    width: 150px;
+    height: 50px;
+    background-color: #1C1C1C;
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .barra-ano2022-1 {
+    width: 150px;
+    height: 50px;
+    background-color: #1C1C1C;
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    opacity: 0;
+  }
+
+  .ano2018 {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1em;
+    padding-bottom: 8em;
+  }
+
+  .ano2018 div img {    
+    padding-right: 4em;
+  }
+
+  .ano2018 div h2 {
+    font-size: 40px;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+
+  .ano2018 div h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+
+  .ano2018 div p {
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: 100;
+  }
+
+  .portfolio-part2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #323232;
+  }
+
+  .linha2 {
+    height: .5em;
+    background-color: #fff;
+    
+  }
+
+  .logo-ti {
+    font-size: 15em  !important;
+    color: #ffffff3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em !important;
+    margin-right: .1em  !important;
+  }
+
+  .ano2020-2021 {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8em;
+  }
+  
+
+  .ano2020-2021 div h2 {
+    font-size: 40px;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+
+  .ano2020-2021 div h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+
+  .ano2020-2021 div p {
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: 100;
+  }
+
+  .ano2020 {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8em;
+  }
+  
+
+  .ano2020 div h2 {
+    font-size: 40px;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+
+  .ano2020 div h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+
+  .ano2020 div p {
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: 100;
+  }
+  
+
+
+
+
+  .portfolio-part3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #323232;
+  }
+
+  .linha2 {
+    height: .5em;
+    background-color: #fff;
+    
+  }
+
+  .ano2022 {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8em;
+  }
+  
+
+  .ano2022 div h2 {
+    font-size: 40px;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+
+  .ano2022 div h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+
+  .ano2022 div p {
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: 100;
+  }
+  
+  
+
+  
+.font-front-end {
+    font-size: 180px;
+    color: #ffffff20;
+}
+
+.front-end-escrita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    height: 45%;
+    padding-top: 8em;
+}
+
+
+#skills {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+#contato {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contatos {
+    width: 50%;
+    padding-left: 10em;
+}
+.contatos div {
+    display: flex;
+    margin: 2em;
+    align-items: center;
+}
+
+
+.contatos div h3 {
+    font-size: 40px;
+    padding-bottom: 1em ;
+}
+
+.contatos div p {
+    font-size: 32px;
+    margin-left: .5em;
+}
+
+.contatos div img {
+    width: 50px;
+    height: auto;
+}
+
+
+.contatos-img {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #rodape {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #323232;
+    padding-bottom: 1em;
+    font-weight: 100;
+    
+}
+
+
+
+
+
+
+
+
+
+
