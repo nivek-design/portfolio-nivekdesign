@@ -918,19 +918,6 @@
   background-color: rgb(255, 255, 255);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #contato {
     position: relative;
     height: 100vh;
@@ -979,31 +966,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   #rodape {
     display: flex;
     justify-content: center;
@@ -1015,9 +977,6 @@
     font-family: Arial, helvetica, Sans-serif;
     
 }
-
-
-
 
 //scrollbarr//
 
