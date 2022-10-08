@@ -220,10 +220,10 @@
     background-color: #1e8e25;
 }
 
-.barra-cinza {
+.barra-roxa {
     height: 4px;
     width: 180px;
-    background-color: #b6b6b6;
+    background-color: #663399;
 }
 
 .barra-vermelha {
@@ -441,7 +441,7 @@
   .barra-ano2018 {
     width: 150px;
     height: 50px;
-    background-color: #b6b6b6;
+    background-color: #663399;
     display: flex;
     font-size: 24px;
     font-weight: 900;
@@ -467,7 +467,7 @@
   .barra-ano2020-2021 {
     width: 150px;
     height: 50px;
-    background-color: #b6b6b6;
+    background-color: #663399;
     display: flex;
     font-size: 24px;
     font-weight: 900;
@@ -871,6 +871,22 @@
   background-color:#914DCF;
 }
 
+.candidatos.color14 .parcial .percentagem {
+  background-color:#2CBF2B;
+}
+
+.candidatos.color15 .parcial .percentagem {
+  background-color:#001E36;
+}
+
+.candidatos.color16 .parcial .percentagem {
+  background-color:#330000;
+}
+
+
+
+
+
 .candidatos .parcial .partidas {
   font-family: Arial, helvetica, Sans-serif;
   font-size: 10px;
@@ -929,6 +945,7 @@
 .contatos {
     width: 50%;
     padding-left: 10em;
+    font-family: Arial, helvetica, Sans-serif;
 }
 .contatos div a{
     display: flex;
@@ -995,6 +1012,7 @@
     background-color: #323232;
     padding-bottom: 1em;
     font-weight: 100;
+    font-family: Arial, helvetica, Sans-serif;
     
 }
 
