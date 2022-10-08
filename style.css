@@ -29,6 +29,9 @@
     width: 100% ;
 }
 
+
+
+
 .init-hidden {
     opacity: 0;
     transition:  opacity 3s ease-in-out;
@@ -46,8 +49,9 @@
     width: 100%;
     height: 3rem;
     z-index: 999;
-    background-color: #2b2b2b;
+    background-color: #323232;
     margin-top: .5em;
+    
       
   }
 
@@ -696,11 +700,11 @@
 
 #skills {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .titulo-skills {
-  height: 10em;
+  margin-top: 10em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -708,7 +712,7 @@
 }
 
 .titulo-skills h2 {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 
@@ -716,6 +720,197 @@
   width: 50px;
 
 }
+
+.titulo-lang-prog {
+  margin-top: 5em;
+}
+
+
+.lang-prog {
+  width: 100%;
+  display: flex;
+  padding: 0 10em 5em 10em;
+}
+
+.lang-prog-part1{
+  width: 50%;
+  justify-content: center;
+}
+
+.lang-prog-part2{
+  width: 50%;
+  justify-content: center;
+  margin-left: 5em;
+}
+
+.candidatos, .text {
+  position:relative;
+  height: 40px;
+  margin:40px 20px;
+  padding-left:50px;
+}
+
+.candidatos img {
+  position:absolute;
+  top:0;
+  left:0;
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding:1px;
+}
+.candidatos .parcial {
+  display:inline-block;
+  width:100%;
+  height:40px;
+  vertical-align:middle;
+  padding: 0 0 0 10px;
+}
+.candidatos .parcial .info {
+  height:15px;
+  position: relative;
+}
+.candidatos .parcial .info > div {
+  float:left;
+}
+.candidatos .parcial .info .nome {
+  position: absolute;
+  top: 0;
+  left:0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.candidatos .parcial .info .eleito, div.candidatos .parcial .info .segundo-turno {
+  color: #fff;
+  padding: 0 5px 2px 5px;
+  border-radius: 2px;
+}
+.candidatos .parcial .info .percentagem-num {
+  position: absolute;
+  top:0;
+  right:0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.candidatos .parcial .progressBar {
+  position:relative;
+  width:100%;
+  height:10px;
+  margin:20px 5px 2px;
+  border-radius:10px;
+  background: #e7e7e7;
+}
+.candidatos .parcial .progressBar .percentagem {
+  position:absolute;
+  top:0;
+  left:0;
+  height:10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #A4B5C0;
+  -webkit-transition: 5s all;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: animationProgress;
+}
+.candidatos.color1 .parcial .percentagem {
+  
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.candidatos.color2 .parcial .percentagem {
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+
+.candidatos.color3 .parcial .percentagem {
+  background-color: #CE5981;
+}
+
+.candidatos.color4 .parcial .percentagem {
+  background-color:#FFD600;
+}
+
+.candidatos.color5 .parcial .percentagem {
+  background-color:#673AB7;
+}
+
+.candidatos.color6 .parcial .percentagem {
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+
+.candidatos.color7 .parcial .percentagem {
+  background-color:#FF41C8;
+}
+
+.candidatos.color8 .parcial .percentagem {
+  background-color:#000;
+}
+
+.candidatos.color9 .parcial .percentagem {
+  background-color:#673AB7;
+}
+
+.candidatos.color10 .parcial .percentagem {
+  background-color:#80DEEA;
+}
+
+.candidatos.color11 .parcial .percentagem {
+  background-color:#448AFF;
+}
+
+.candidatos.color12 .parcial .percentagem {
+  background-color:#01579B;
+}
+
+.candidatos.color13 .parcial .percentagem {
+  background-color:#914DCF;
+}
+
+.candidatos .parcial .partidas {
+  font-family: Arial, helvetica, Sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #9e9c9b;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.percentual {
+  -webkit-transition: 5s all;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: animationProgress;
+  transition: 5s all;
+  animation-duration: 5s;
+  animation-name: animationProgress;
+}
+@-webkit-keyframes animationProgress {
+  from {
+      width:0;
+  }
+}
+@keyframes animationProgress {
+  from {
+      width:0;
+  }
+}
+
+.img-flat {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -805,6 +1000,27 @@
 
 
 
+
+//scrollbarr//
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #323232;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #663399;
+    border-radius: 10px;
+    border: 3px solid #323232;
+  }
 
 
 
