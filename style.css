@@ -262,8 +262,8 @@
 .jogos-comp {
     display: flex;
     align-items: center;
-    
 }
+
 .jogos-comp div {
     margin:  2em  2em 0 0;
 }
@@ -277,6 +277,9 @@
     transform: scale(1.1);
 }
 
+.mira {
+  cursor: crosshair;
+}
 .times {
     display: flex;
     align-items: center;
@@ -381,7 +384,7 @@
     justify-content: center;
   }
 
-  .ano2017 {
+  .ano2015 {
     width: 100%;
     height: 45%;
     display: flex;
@@ -760,6 +763,12 @@
   border: 2px solid #ddd;
   padding:1px;
 }
+.candidatos:hover {
+  transform: scale(1.1);
+  box-shadow:  10px 20px 30px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+}
+
 .candidatos .parcial {
   display:inline-block;
   width:100%;
