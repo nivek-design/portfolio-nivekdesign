@@ -36,7 +36,6 @@
     opacity: 0;
     transition:  opacity 3s ease-in-out;
     transition-delay: .2s;
-    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out; */
 }
 
 .init-hidden-off {
@@ -98,9 +97,15 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #323232;
+   
+    
     
   }
+
+  
+
+
+
 
   .home > div > h1 {
     font-weight: bolder;
@@ -115,6 +120,13 @@
     font-weight: lighter;
     font-size: 32px;
   }
+
+
+  
+
+
+
+
 
   a {
     color: white;
@@ -392,24 +404,24 @@
     align-items: center;
     
   }
-  .ano2017 div img {    
+  .ano2015 div img {    
     padding-right: 4em;
   }
 
-  .ano2017 div h2 {
+  .ano2015 div h2 {
     font-size: 40px;
     color: #1E1E1E;
     margin-bottom: 8px;
     font-weight: 900;
   }
 
-  .ano2017 div h3 {
+  .ano2015 div h3 {
     font-size: 24px;
     font-weight: 100;
     margin-bottom: 8px;
   }
 
-  .ano2017 div p {
+  .ano2015 div p {
     font-size: 16px;
     margin-top: 1em;
     font-weight: 100;
@@ -676,12 +688,12 @@
     
   }
 
-  .logos-programacao img:hover {
+  /* .logos-programacao img:hover {
     transform: scale(1.1);
     opacity: 100%;
     transform: rotate(350deg);
     
-  }
+  } */
   
   
 
@@ -764,7 +776,7 @@
   padding:1px;
 }
 .candidatos:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   box-shadow:  10px 20px 30px rgba(0, 0, 0, 0.212);
   cursor: pointer;
 }
