@@ -1,47 +1,75 @@
-.color-change-5x {
-    -webkit-animation: color-change-5x 8s linear infinite alternate both;
-            animation: color-change-5x 8s linear infinite alternate both;
-  }
-
-
 /**
  * ----------------------------------------
- * animation color-change-5x
  * background home
  * ----------------------------------------
  */
-@-webkit-keyframes color-change-5x {
-  0% {
-    background: #272727;
+.color-change-5x {
+           animation: color-change-5x 9s linear infinite alternate both;
   }
-  25% {
-    background: #494949;
-  }
-  50% {
-    background: #5a5a5a;
-  }
-  75% {
-    background: #3f3f3f;
-  }
-  100% {
-    background: #686868;
-  }
-}
+
 @keyframes color-change-5x {
   0% {
-    background: #272727;
+    background: #ffffff;
+  }
+  5% {
+    background: #e0e0e0;
+  }
+  10% {
+    background: #c0c0c0;
+  }
+  15% {
+    background: #a1a1a1;
+  }
+  20% {
+    background: #929292;
   }
   25% {
-    background: #494949;
+    background: #888888;
+  }
+  30% {
+    background: #6e6e6e;
+  }
+  35% {
+    background: #6b6b6b;
+  }
+  40% {
+    background: #646464;
+  }
+  45% {
+    background: #5f5f5f;
   }
   50% {
-    background: #5a5a5a;
+    background: #494949;
+  }
+  55% {
+    background: #383838;
+  }
+  60% {
+    background: #363636;
+  }
+  65% {
+    background: #353535;
+  }
+  70% {
+    background: #272727;
   }
   75% {
-    background: #3f3f3f;
+    background: #252525;
+  }
+  80% {
+    background: #222222;
+  }
+  85% {
+    background: #1f1f1f;
+  }
+  90% {
+    background: #1b1b1b;
+  }
+  95% {
+    background: #161616;
   }
   100% {
-    background: #686868;
+    background: #000000;
   }
 }
 

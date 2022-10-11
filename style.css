@@ -12,12 +12,13 @@
   }
   
   body {
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); */
     background-blend-mode: multiply;
-    color: white;
+    color: var(--cor-fonte-primaria);
     margin: 0 auto;
     font-family: 'Changa', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor-preta-primaria);
   }
 
   header {
@@ -48,14 +49,14 @@
     width: 100%;
     height: 3rem;
     z-index: 999;
-    background-color: #323232;
-    margin-top: .5em;
+    background-color: var(--cor-preta-primaria);
+    
     
       
   }
-
+  
   #menu:after {
-    background-color:  rgba(102, 51, 153, 0.61);
+    background-color:  var(--cor-roxa-secundaria);
   }
 
 .logo-menu {
@@ -73,19 +74,19 @@
 .menu-horizontal li {
     display: inline-block;
     margin: 20px;
-    color: #fff;
+    
     
 }
 
 #orcamento-btn {
-    border: 2px solid #663399;
+    border: 2px solid var(--cor-roxa-secundaria);
     padding: 5px;
     border-radius: 10px;
 }
 
 #orcamento-btn:hover{
-    background-color: #663399;
-    color: white;
+    background-color: var(--cor-roxa-secundaria);
+    
 }
 
 
@@ -97,15 +98,9 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: var(--cor-preta-principal);
    
-    
-    
   }
-
-  
-
-
-
 
   .home > div > h1 {
     font-weight: bolder;
@@ -113,7 +108,7 @@
   }
 
   .home > div > h1> span {
-    color: rebeccapurple;
+    color: var(--cor-roxa-secundaria);
   }
 
   .home > div > h2 {
@@ -121,24 +116,17 @@
     font-size: 32px;
   }
 
-
-  
-
-
-
-
-
   a {
     color: white;
     text-decoration: none;
 }
 .logo-menu a:hover {
-    color: rebeccapurple;
+    color: var(--cor-roxa-secundaria);
     transition: 0.3s all;
 }
 
 .menu-horizontal li:hover {
-    color: rebeccapurple !important;
+    color: var(--cor-roxa-secundaria) !important;
     transition: 0.3s all;
 }
 
@@ -172,7 +160,7 @@
 #sobre {
     height: 100vh;
     width: 100%;
-    background-color: #323232;
+    background-color: var(--cor-preta-primaria);
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
@@ -235,7 +223,7 @@
 .barra-roxa {
     height: 4px;
     width: 180px;
-    background-color: #663399;
+    background-color: var(--cor-roxa-secundaria);
 }
 
 .barra-vermelha {
@@ -247,13 +235,13 @@
 .barra-preto {
     height: 4px;
     width: 180px;
-    background-color: #000000;
+    background-color: #000;
 }
 
 .barra-rosa {
     height: 4px;
     width: 180px;
-    background-color: #000000;
+    background-color: #000;
 }
 
 
@@ -389,7 +377,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #323232;
+    background-color: var(--cor-preta-primaria);
     flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
@@ -410,7 +398,7 @@
 
   .ano2015 div h2 {
     font-size: 40px;
-    color: #1E1E1E;
+    color: var(--cor-azul-primaria);
     margin-bottom: 8px;
     font-weight: 900;
   }
@@ -436,7 +424,7 @@
 
   .linha {
     height: .5em;
-    background-color: #fff;
+    background-color: var(--cor-fonte-primaria);
     margin-left: 25em;
   }
 
@@ -456,7 +444,7 @@
   .barra-ano2018 {
     width: 150px;
     height: 50px;
-    background-color: #663399;
+    background-color: var(--cor-roxa-secundaria);
     display: flex;
     font-size: 24px;
     font-weight: 900;
@@ -482,7 +470,7 @@
   .barra-ano2020-2021 {
     width: 150px;
     height: 50px;
-    background-color: #663399;
+    background-color: var(--cor-roxa-secundaria);
     display: flex;
     font-size: 24px;
     font-weight: 900;
@@ -535,7 +523,7 @@
 
   .ano2018 div h2 {
     font-size: 40px;
-    color: #1E1E1E;
+    color: var(--cor-azul-primaria);
     margin-bottom: 8px;
     font-weight: 900;
   }
@@ -556,12 +544,12 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #323232;
+    background-color: var(--cor-preta-primaria);
   }
 
   .linha2 {
     height: .5em;
-    background-color: #fff;
+    background-color: var(--cor-fonte-primaria);
     
   }
 
@@ -588,7 +576,7 @@
 
   .ano2020-2021 div h2 {
     font-size: 40px;
-    color: #1E1E1E;
+    color: var(--cor-azul-primaria);
     margin-bottom: 8px;
     font-weight: 900;
   }
@@ -617,7 +605,7 @@
 
   .ano2020 div h2 {
     font-size: 40px;
-    color: #1E1E1E;
+    color: var(--cor-azul-primaria);
     margin-bottom: 8px;
     font-weight: 900;
   }
@@ -642,12 +630,12 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #323232;
+    background-color: var(--cor-preta-primaria);
   }
 
   .linha2 {
     height: .5em;
-    background-color: #fff;
+    background-color: var(--cor-fonte-primaria);
     
   }
 
@@ -663,7 +651,7 @@
 
   .ano2022 div h2 {
     font-size: 40px;
-    color: #1E1E1E;
+    color: var(--cor-azul-primaria);
     margin-bottom: 8px;
     font-weight: 900;
   }
@@ -947,7 +935,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: #323232;
+    background-color: var(--cor-preta-primaria));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -996,7 +984,7 @@
     justify-content: center;
     font-size: 12px;
     color: #FFFFFF;
-    background-color: #323232;
+    background-color: var(--cor-preta-primaria);
     padding-bottom: 1em;
     font-weight: 100;
     font-family: Arial, helvetica, Sans-serif;
@@ -1015,13 +1003,13 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #323232;
+    background: var(--cor-preta-primaria);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #663399;
+    background-color: var(--cor-roxa-secundaria);
     border-radius: 10px;
-    border: 3px solid #323232;
+    border: 3px solid var(--cor-preta-primaria);
   }
 
 
