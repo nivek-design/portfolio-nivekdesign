@@ -261,7 +261,7 @@ const bounceTop = new IntersectionObserver(entries => {
 
   const bounceRight = new IntersectionObserver(entries => {
     Array.from(entries).forEach(entry =>{
-        if (entry.intersectionRatio  >= 0) {
+        if (entry.intersectionRatio  > 0) {
             entry.target.classList.add('bounce-in-right-on')
         }
     })
@@ -275,10 +275,11 @@ const bounceTop = new IntersectionObserver(entries => {
   })
 
 
-  const bounceLeft = new IntersectionObserver(entries => {
+
+  const rollInRightOff= new IntersectionObserver(entries => {
     Array.from(entries).forEach(entry =>{
-        if (entry.intersectionRatio  >= 0) {
-            entry.target.classList.add('bounce-in-left-on')
+        if (entry.intersectionRatio  > 0) {
+            entry.target.classList.add('roll-in-right-on')
         }
     })
         
@@ -286,9 +287,10 @@ const bounceTop = new IntersectionObserver(entries => {
     threshold: [0, .2, .5, .7 , 1]
   })
   
-  Array.from(document.querySelectorAll('.bounce-in-left-off')).forEach(element => {
-    bounceLeft.observe(element)
+  Array.from(document.querySelectorAll('.roll-in-right-off')).forEach(element => {
+    rollInRightOff.observe(element)
   })
+ 
 
 
   
