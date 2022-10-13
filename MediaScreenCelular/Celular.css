@@ -1,0 +1,24 @@
+@media screen and (max-width: 480px) {
+  header {
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  header #home {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  header #home .logo-menu {
+    margin-left: 0;
+  }
+  header nav {
+    width: 100%;
+  }
+  .home {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Celular.css.map */
