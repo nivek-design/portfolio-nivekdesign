@@ -1,23 +1,102 @@
 @media screen and (max-width: 480px) {
-  header {
-    width: 100vw;
+  body {
+    max-width: 95vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .home {
+    width: 100%;
+    height: 70vh;
+  }
+  .home div {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2em;
+    align-content: center;
+    align-items: center;
   }
-  header #home {
-    width: 100vw;
+  .home div h2 {
+    font-size: 16px;
+  }
+  .home div h1 {
+    font-size: 24px;
+  }
+  .home div div ul img {
+    width: 70px;
+    height: auto;
+  }
+  #sobre {
+    width: 100%;
+  }
+  #sobre .foto-minha {
+    display: none;
+  }
+  #sobre .sobre-mim {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
-  header #home .logo-menu {
-    margin-left: 0;
+  #sobre span {
+    display: none;
   }
-  header nav {
+  .jogos-comp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+  .jogos-comp .jogos-comp-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .jogos-comp .csgo {
+    width: 50%;
+    margin: 0px;
+  }
+  .jogos-comp .fifa {
+    width: 50%;
+    margin: 0px;
+  }
+  .times {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-items: center;
+  }
+  .times div {
+    margin: 0;
+  }
+  .times .times-title {
+    width: 100%;
+    margin: 0;
+    margin: 2em 0 1em 0;
+  }
+  .times .palmeiras {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .times .londrina {
+    width: 33%;
+  }
+  .times .brasil {
+    width: 33%;
+  }
+  #portfolio {
     width: 100%;
   }
-  .home {
-    max-width: 100%;
+  #portfolio .portfolio-part1 {
+    display: flex;
   }
 }
 
