@@ -5,6 +5,21 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  nav {
+    display: none;
+  }
+  #menu {
+    display: flex;
+    justify-content: center;
+  }
+  #menu a {
+    display: flex;
+    justify-content: center;
+  }
+  #menu a .logo-menu {
+    margin-left: 0;
+    line-height: 0;
+  }
   .home {
     width: 100%;
     height: 70vh;
@@ -28,6 +43,7 @@
   }
   #sobre {
     width: 100%;
+    height: auto;
   }
   #sobre .sobre-mim {
     width: 100%;
@@ -39,6 +55,38 @@
   }
   #sobre div h2 {
     font-size: 32px;
+  }
+  .foto-minha {
+    display: none;
+  }
+  .foto-minha2 {
+    display: flex;
+    background-color: black;
+    position: relative;
+  }
+  .foto-minha2 .foto-minha2-part1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .foto-minha2 .foto-minha2-part1 img {
+    width: 100%;
+    height: auto;
+  }
+  .foto-minha2 .foto-minha2-part2 {
+    width: 20%;
+    height: 100%;
+  }
+  .foto-minha2 .foto-minha2-part2 h2 {
+    width: 100%;
+    color: #181818;
+    position: absolute;
+    top: 180px;
+    left: 120px;
+    transform: rotate(90deg);
+    font-size: 32px;
+    text-transform: uppercase;
   }
   .jogos-comp {
     display: flex;
@@ -94,10 +142,50 @@
   }
   #portfolio {
     width: 100%;
-    display: none;
+  }
+  #portfolio .space-holder .sticky {
+    overflow-y: hidden;
   }
   #portfolio .portfolio-part1 {
     display: flex;
+    width: 100%;
+  }
+  #portfolio .portfolio-part1 .ano2015-width {
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
+  }
+  #portfolio .portfolio-part1 .ano2015 {
+    justify-content: initial;
+    margin-left: 5em;
+  }
+  #portfolio .portfolio-part1 .ano2015 div h2 {
+    font-size: 24px;
+  }
+  #portfolio .portfolio-part1 .ano2015 div h3 {
+    font-size: 20px;
+  }
+  #portfolio .portfolio-part1 .linha-tempo .primeiro-ano {
+    margin-left: 12em;
+  }
+  #portfolio .portfolio-part1 .linha-tempo .linha {
+    margin-left: 5em;
+  }
+  #portfolio .portfolio-part1 .linha-tempo .barra-ano2018 {
+    margin-left: 29.2em;
+  }
+  #portfolio .portfolio-part1 .ano2018-width {
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
+  }
+  #portfolio .portfolio-part1 .ano2018 {
+    justify-content: initial;
+    margin-left: 27em;
+  }
+  #portfolio .portfolio-part1 .ano2018 div h2 {
+    font-size: 24px;
+  }
+  #portfolio .portfolio-part1 .ano2018 div h3 {
+    font-size: 20px;
   }
   .titulo-skills h2 {
     font-size: 32px;

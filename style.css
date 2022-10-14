@@ -167,6 +167,10 @@
     align-content: center;
 }
 
+foto-minha2 {
+  display: none;
+}
+
 .foto-minha {
     width: 40%;
     display: flex;
