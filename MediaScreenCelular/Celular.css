@@ -148,7 +148,7 @@
   }
   #portfolio .portfolio-part1 {
     display: flex;
-    width: 100%;
+    width: 300vw;
   }
   #portfolio .portfolio-part1 .ano2015-width {
     width: 90vw;
@@ -186,6 +186,60 @@
   }
   #portfolio .portfolio-part1 .ano2018 div h3 {
     font-size: 20px;
+  }
+  #portfolio .portfolio-part2 {
+    width: 400vw;
+  }
+  #portfolio .portfolio-part2 .ano2020-2021-width {
+    width: 300vw;
+    margin: 0 5vw 0 5vw;
+  }
+  #portfolio .portfolio-part2 .ano2020-2021 {
+    justify-content: initial;
+    margin-left: 15em;
+  }
+  #portfolio .portfolio-part2 .ano2020-2021 div h2 {
+    font-size: 24px;
+  }
+  #portfolio .portfolio-part2 .ano2020-2021 div h3 {
+    font-size: 20px;
+  }
+  #portfolio .portfolio-part2 .linha-tempo .barra-ano2020 {
+    margin-left: 2em;
+  }
+  #portfolio .portfolio-part2 .ano2020-width {
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
+  }
+  #portfolio .portfolio-part2 .ano2020 {
+    justify-content: initial;
+    padding-left: 2em;
+  }
+  #portfolio .portfolio-part2 .ano2020 div h2 {
+    font-size: 24px;
+  }
+  #portfolio .portfolio-part2 .ano2020 div h3 {
+    font-size: 20px;
+  }
+  #portfolio .portfolio-part2 .portfolio-part3 {
+    width: 400vw;
+  }
+  #portfolio .portfolio-part2 .ano2022-width {
+    width: 300vw;
+    margin: 0 5vw 0 5vw;
+  }
+  #portfolio .portfolio-part2 .ano2022 {
+    justify-content: initial;
+    margin-left: 15em;
+  }
+  #portfolio .portfolio-part2 .ano2022 div h2 {
+    font-size: 24px;
+  }
+  #portfolio .portfolio-part2 .ano2022 div h3 {
+    font-size: 20px;
+  }
+  #portfolio .portfolio-part2 .linha-tempo .barra-ano2022 {
+    margin-left: 2em;
   }
   .titulo-skills h2 {
     font-size: 32px;
