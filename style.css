@@ -550,6 +550,8 @@
     align-content: center;
   }
 
+ 
+
   .barra-ano2020-2021 {
     width: 150px;
     height: 50px;
@@ -562,6 +564,10 @@
     align-items: center;
     align-content: center;
     
+  }
+
+  .ano2020-2021-width {
+    margin-top: 3em;
   }
 
   .barra-ano2022 {
