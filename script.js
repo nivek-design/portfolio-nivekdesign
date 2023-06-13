@@ -24,7 +24,7 @@ const observer = new IntersectionObserver(entries => {
       if (entry.intersectionRatio  > 0) {
           entry.target.classList.add('init-hidden-off')
       }
-  })
+  }) 
       
 },{
   threshold: [0, .2, .5, .7 , 1]
